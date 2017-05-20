@@ -262,6 +262,18 @@ a:hover {
   color: orange;
 }
 
+@media (max-width: 1200px) {
+  section {
+    min-height: 720px;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    min-height: 1050px;
+  }
+}
+
 @media (max-width: 768px) {
   section {
     min-height: 1100px;
