@@ -262,6 +262,16 @@ a:hover {
   color: orange;
 }
 
+@media screen and (orientation:portrait) {
+  section h2 {
+    padding-top: 0px;
+  }
+
+  section {
+    min-height: 1400px;
+  }
+}
+
 @media (max-width: 1200px) {
   section {
     min-height: 720px;
@@ -294,6 +304,9 @@ a:hover {
 }
 
 @media (max-width: 576px) {
+  footer {
+    height: 800px;
+  }
   section {
     min-height: 1000px;
   }
@@ -323,4 +336,14 @@ a:hover {
     margin-top: 5px;
   }
 
+  img {
+    max-width: 250px;
+  }
+
+}
+
+@media (max-width: 360px, max-height: 576px) {
+  section {
+    min-height: 1200px;
+  }
 }
