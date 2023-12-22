@@ -3,129 +3,47 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Signika:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://use.fontawesome.com/51a35f4b36.js"></script>
-    <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
-    <script src="js/bootstrap.js" charset="utf-8"></script>
-    <script src="js/main.js" charset="utf-8"></script>
-    <title>Portfolio - Fabricio Ferreira</title>
+    <style>
+      body {
+        margin: auto;
+        max-width: 800px;
+        height: 100vh;
+        font-size: 18px;
+        line-height: 1.4;
+        color: #fff;
+        padding: 0 10px;
+        font-family: system-ui, sans-serif;
+        background-color: #121212;
+        text-align: center;
+      }
+      main {
+        max-width: 90%;
+        margin: auto;
+        position: relative;
+        top: 15%;
+      }
+      h1, h2 {
+        margin: 0;
+      }
+      h1 {
+        font-size: 3em;
+      }
+      h2 {
+        font-size: 1.3em;
+        font-weight: normal;
+        font-style: italic;
+        margin-bottom: 40px;
+      }
+      a {
+        margin: 5px;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1 class="name row"><span class="col-sm-6 fab">Fabricio</span> <span class="col-sm-6 fer">Ferreira</span></h1>
-      <h2 class="row"><span class="col-sm-4">Hardcore Gamer</span> <span class="col-sm-4">Aspiring Backend Web Developer</span> <span class="col-sm-4">Crap Magician</span></h2>
-      <p class="row">
-        <span class="col-sm-4"><a target="_blank" href="https://github.com/ef-eff"><i class="fa fa-github fa-5x"></i><br>github.com/ef-eff</a></span>
-        <span class="col-sm-4"><a target="_blank" href="https://www.linkedin.com/in/ef-eff"><i class="fa fa-linkedin-square fa-5x"></i><br>www.linkedin.com/in/ef-eff</a></span>
-        <span class="col-sm-4"><a target="_blank" href="mailto:ravaneliferreira@gmail.com"><i class="fa fa-envelope fa-5x"></i><br>ravaneliferreira@gmail.com</a></span>
-      </p>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#about" class="about">About</a></li>
-        <li><a href="#yahtzee" class="yahtzee">Yahtzee</a></li>
-        <li><a href="#gaming-meetups" class="gaming">Gaming Meetups</a></li>
-        <li><a href="#bet-bucket" class="betbucket">BetBucket</a></li>
-        <li><a href="#twitter-trends" class="twitter">Twitter Trends</a></li>
-      </ul>
-    </nav>
     <main>
-      <section id="about">
-        <h2>What's this for?</h2>
-        <p>This website is (not really) a user experience friendly way of seeing my projects. I'll be keeping it up to date and may even change it completely from time to time. It's also all about web dev, I did say I'm a crap magician, I can't do anything in that field so don't get your hopes up, a Magician never reveals his secrets anyway. I think I made poor design choices with this website to be honest, I'll think of something else soon.</p>
-        <p><span>DISCLAIMER</span>This is a work in progress so it may be  broken on mobile. If you feel annoyed enough you can send suggestions (and complaints) to my email. Incase you didn't see it in the header because you're on mobile and this website is bad, my email is <a target="_blank" href="mailto:ravaneliferreira@gmail.com">ravaneliferreira@gmail.com</a></p>
-        <p>Currently all projects were intially created in one week at <span id="GA">General Assembly</span> in London, they now have minor touch ups. If you would like to know more about GA, click <a target="_blank" href="https://generalassemb.ly/">here</a></p>
-      </section>
-      <section id="yahtzee">
-        <h2>Yahtzee</h2>
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>What is it?</h3>
-            <p>Made with just HTML5/CSS3/JavaScript(jQuery) this is my first project while at General Assembly.
-              <br><br>
-              The rules of the game are a bit long so go google it or something, but this version is 2 player on the same computer since I'm not a wizard. I really enjoyed doing the logic for this game, as it was like solving multiple small challenges to put together a massive lego.
-              <br><br>
-              The CSS part sucked though and still needs work.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <a target="_blank" href="https://pacific-lake-61896.herokuapp.com/"><span>Play it here!</span><br>
-            <img src="images/Yahtzee-FULL.png"></a><br>
-            <a target="_blank" href="https://github.com/ef-eff/project-1"><i class="fa fa-github fa-3x"></i><span>ef-eff/project-1</span></a>
-          </div>
-        </div>
-      </section>
-      <section id="gaming-meetups">
-        <h2>Gaming Meetups</h2>
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>What is it?</h3>
-              <p>Second project at GA which introduced a cluster fuck of files, this one is using Node.js with Express, and a Mongo database.
-                <br><br>
-                A fully restful app (I hope), it's a very basic meetup app where you can add events and sign up to them, with a specificity on games. It uses the Google Maps API for added spice. A bit boring IMO, as the functionality is very basic and could be rebranded to apply to anything else.
-                <br><br>
-                This project cemented in my mind my favouritism for backend development, as I once again found the frontend nitpicky and annoying, while building the routes was really satisfying.
-              </p>
-          </div>
-          <div class="col-lg-6">
-            <a target="_blank" href="https://still-reef-15816.herokuapp.com/"><span>See it here!</span><br>
-            <img src="images/Gaming-FULL.png"></a><br>
-            <a target="_blank" href="https://github.com/ef-eff/project-2"><i class="fa fa-github fa-3x"></i><span>ef-eff/project-2</span></a>
-          </div>
-        </div>
-      </section>
-      <section id="bet-bucket">
-        <h2>BetBucket</h2>
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>What is it?</h3>
-              <p>Third project at GA (Surprise!!!(Not)) that incorporates the same backend as project 2 (if you actually read what that was) but now with an AngularJS 1 frontend.
-                <br><br>
-                Another fully RESTful app and the one I think is the coolest, it uses the Betfair API to get match odds, where you can add visualise the data on a Chart.js chart because it's cool.
-                <br><br>
-                This was a group project, where I focused mainly on building the backend and handling the Betfair API on the frontend (that API is a chore). It also included git conflicts, so, that was fun. I learnt the hard way.
-              </p>
-          </div>
-          <div class="col-lg-6">
-            <a target="_blank" href="http://bet-bucket.herokuapp.com/"><span>See it here!</span><br>
-            <img src="images/Bet-FULL.png"></a><br>
-            <a target="_blank" href="https://github.com/romanstan1/Bet-Bucket-GA-Project-3"><i class="fa fa-github fa-3x"></i><span>romanstan1/Bet-Bucket-GA-Project-3</span></a>
-          </div>
-        </div>
-      </section>
-      <section id="twitter-trends">
-        <h2>Twitter Trends</h2>
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>What is it?</h3>
-              <p>Last project from GA and my first use of Ruby on Rails and an SQL database (PostgreSQL), with AngularJS on the front.
-                <br><br>
-                  You can comment, upvote and downvote comments, post pictures with them, send private hatemail and nudes (don't though, they go to my AWS account and I will leak them). The topics can't be created by users, only a Rails task I set up that uses the Twitter API to create the top 5 current trending topics in the USA.
-                <br><br>
-                  Extremely fun to make and felt very simple due to Rails' shortcuts. I am definitely a fan of D.H.H. (creator of Rails).
-              </p>
-          </div>
-          <div class="col-lg-6">
-            <a target="_blank" href="https://stark-scrubland-16119.herokuapp.com"><span>Exclamation mark?</span><br>
-            <img src="images/Twitter-FULL.png"></a><br>
-            <i class="fa fa-github fa-3x"></i><br><a target="_blank" href="https://github.com/ef-eff/project-4-frontend"><span>ef-eff/project-4-frontend</span></a><br><a target="_blank" href="https://github.com/ef-eff/project-4-api"><span>ef-eff/project-4-api</span></a>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <h3>Thats it! For now...</h3>
-        <p>I hope this wasn't too painful to navigate. <br>Im considering not having the backgrounds be the images of the game as it kinda looks weird and the text is a bit unreadable.
-          <br><br>
-          You can check out my <a target="_blank" href="http://exercism.io/ef-eff">exercism</a> and criticise my code. Incase you don't know it's a cool website where you can do challenges for almost every language, upload it and have people comment on ways to improve. I love em for the challenge, not so much the refactoring, though im trying to get into that.
-          <br><br>
-          Thank you for presumably reading everything, I love ya mysterious person.<br>
-          <button>Back to the top!</button>
-        </p>
-        <span>Made with love and coffee by Fabricio Ferreira (I try too hard to be humorous)</span>
-      </footer>
+      <h1>Fabricio Ferreira</h1>
+      <h2>Back-End Developer</h2>
+      <p>I mostly build TypeScript APIs, create <i>monstrous</i> SQL queries, dabble in DevOps and avoid CSS as much as possible.</p>
     </main>
   </body>
 </html>
